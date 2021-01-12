@@ -1,0 +1,27 @@
+{
+  "name": "Node-PG",
+  "version": "1.0.0",
+  "description": "Connection and basic Queries between Node &amp; PostgreSQL.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlos-ssh/Node-PG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlos-ssh/Node-PG/issues"
+  },
+  "homepage": "https://github.com/carlos-ssh/Node-PG#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
