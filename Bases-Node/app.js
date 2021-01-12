@@ -1,8 +1,17 @@
+// REQUIREDS
 const fs = require('fs');
-// const express = require('express');
 
-var base = 1;
+
+let base = 9;
+let data = '';
 
 for (let i = 1; i <= 10; i++) {
-    console.log(`${base} * ${ i } = ${ base * i }`);
+    data += `${ base } * ${ i } = ${ base * i }\n`;
 }
+
+fs.writeFile(`../tablas/tabla-${ base }.txt `, data, (err) => {
+
+    if (err) throw err;
+
+    console.log(`El archivo Tabla - ${ base } a sido creado `);
+});
